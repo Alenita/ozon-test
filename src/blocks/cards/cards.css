@@ -1,0 +1,6 @@
+@import './__list/cards__list.css';
+
+.cards {
+    width: 90%;
+    margin: 44px auto 0;
+}

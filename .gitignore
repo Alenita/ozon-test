@@ -1,0 +1,17 @@
+
+.idea
+.vscode
+.sublime
+
+/dist
+
+*.log
+/node_modules
+
+Thumbs.db
+Desktop.ini
+.DS_Store
+ehthumbs.db
+
+
+

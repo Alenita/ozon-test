@@ -1,0 +1,6 @@
+.header__list {
+    width: 33%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

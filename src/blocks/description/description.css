@@ -1,0 +1,10 @@
+@import './__title/description__title.css';
+@import './__text/description__text.css';
+
+.description {
+    margin: 20px auto 0;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
