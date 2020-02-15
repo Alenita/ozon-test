@@ -9,8 +9,8 @@ const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
     entry: { 
-        main: './src/index.js',
-        mail: './src/catalog.js'
+        main: './src/js/index.js',
+        mail: './src/js/catalog.js'
 
     },
     output: {
@@ -81,12 +81,12 @@ module.exports = {
             canPrint: true
        }),
         new HtmlWebpackPlugin({ 
-            inject: false,
+            inject: true,
             template: './src/index.html',
             filename: 'index.html'
         }),
         new HtmlWebpackPlugin({ 
-            inject: true,
+            inject: false,
             template: './src/catalog.html',
             filename: 'catalog.html'
         }),

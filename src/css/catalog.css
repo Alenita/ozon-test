@@ -1,0 +1,11 @@
+@import '../blocks/root/root.css';
+@import '../blocks/header/header.css';
+@import '../blocks/link/link.css';
+@import '../blocks/description/description.css';
+@import '../blocks/item/item.css';
+@import '../blocks/cards/cards.css';
+@import '../blocks/card/card.css';
+
+body {
+    margin: 0;
+}
