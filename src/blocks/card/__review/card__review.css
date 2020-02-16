@@ -1,0 +1,11 @@
+.card__review {
+    font-size: 14px;
+    line-height: 18px;
+    color: #808D9A;
+    padding: 0;
+    margin: 0;
+    }
+
+.card__review:hover {
+    color: #004ed6;
+}

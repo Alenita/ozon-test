@@ -1,0 +1,7 @@
+.card__price.card__price_previous {
+    font-size: 12px;
+    line-height: 16px;
+    color: #001A34;
+    font-weight: 400;
+    text-decoration: line-through #F91155;
+}

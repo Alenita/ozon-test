@@ -1,0 +1,9 @@
+@import './_final/card__price_final.css';
+@import './_previous/card__price_previous.css';
+
+.card__price {
+    font-size: 20px;
+    line-height: 26px;
+    color: #001A34;
+    font-weight: 900;
+}

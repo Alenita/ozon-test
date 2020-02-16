@@ -1,3 +1,18 @@
+@import './__image.css';
+@import './__discount-block/card__discount-block.css';
+@import './__header/card__header.css';
+@import './__discount/card__discount.css';
+@import './__price-container/card__price-container.css';
+@import './__price/card__price.css';
+@import './__description/card__description.css';
+@import './__rating/card__rating.css';
+@import './__stars/card__stars.css';
+@import './__review/card__review.css';
+@import './__button/card__button.css';
+@import './__btn-text/card__btn-text.css';
+@import './__text/card__text.css';
+
 .card {
     grid-column-start: span 3;
+    cursor: pointer;
 }

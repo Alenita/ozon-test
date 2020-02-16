@@ -1,0 +1,15 @@
+.card__text {
+    font-size: 16px;
+    line-height: 20px;
+    color: #001A34;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+}
+
+.card__text:hover {
+    color: #004ed6;
+}
