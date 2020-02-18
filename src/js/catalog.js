@@ -245,7 +245,7 @@ function showCart () { // вывод счётчика, если в корзин�
 
   if (localStorage.length > 1) {
     counter.classList.add('visible')
-    counter.textContent = localStorage.length - 1
+    counter.textContent = localStorage.length;
   } else {
     counter.classList.remove('visible')
   }
