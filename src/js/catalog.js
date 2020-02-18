@@ -5,10 +5,12 @@ const catalog = [ //данные подружаемых товаров
         name: 'Product1',
         price: 8000,
         discount: 0.3,
-        image: 'https://via.placeholder.com/216/0000FF/808080',
+        image: 'https://via.placeholder.com/216/444888/FFFFFF',
         isInCart: false,
         description: 'Cтул Lars желтый пластик Ш.48 В.83 Г.56 Вес 5.5кг…',
         reviews: '123К отзывов',
+        rate: 4,
+        empty: 1
         
     },
 
@@ -16,92 +18,97 @@ const catalog = [ //данные подружаемых товаров
         name: 'Product2',
         price: 500,
         discount: false,
-        image: 'https://via.placeholder.com/216.png/09f/fff',
+        image: 'https://via.placeholder.com/216.png/91a3a1/FFFFFF',
         isInCart: false,
         description: 'Cтул Lars желтый пластик Ш.48 В.83 Г.56 Вес 5.5кг…',
-        reviews: '12К отзывов'
+        reviews: '12К отзывов',
+        rate: 5
         },
 
     {
         name: 'Product3',
-        price: 9000,
+        price: 2456,
         discount: 0.2,
-        image: 'https://via.placeholder.com/216/FFFF00/000000',
+        image: 'https://via.placeholder.com/216/a39891/FFFFFF',
         isInCart: false,
         description: 'Cтул Lars желтый пластик Ш.48 В.83 Г.56 Вес 5.5кг…',
-        reviews: '23К отзывов'    
+        reviews: '23К отзывов',
+        rate: 5
         },
 
         {
             name: 'Product4',
             price: 10000,
             discount: 0.3,
-            image: 'https://via.placeholder.com/216/FF0000/FFFFFF',
+            image: 'https://via.placeholder.com/216/a39193/FFFFFF',
             isInCart: false,
             description: 'Cтул Lars желтый пластик Ш.48 В.83 Г.56 Вес 5.5кг…',
-            reviews: '1К отзывов'
-                 
+            reviews: '1К отзывов',
+            rate: 5
         },
 
         {
             name: 'Product5',
             price: 10000,
             discount: false,
-            image: 'https://via.placeholder.com/216/FFFF00/000000',
+            image: 'https://via.placeholder.com/216/636c51/FFFFFF',
             isInCart: false,
             description: 'Cтул Lars желтый пластик Ш.48 В.83 Г.56 Вес 5.5кг…',
-            reviews: '3К отзывов'
+            reviews: '3К отзывов',
+            rate: 5
         },
 
         {
             name: 'Product6',
             price: 8000,
             discount: 0.3,
-            image: 'https://via.placeholder.com/216/0000FF/808080',
+            image: 'https://via.placeholder.com/216/516c5a/FFFFFF',
             isInCart: false,
             description: 'Cтул Lars желтый пластик Ш.48 В.83 Г.56 Вес 5.5кг…',
             reviews: '123К отзывов',
-            
+            rate: 5
         },
         {
             name: 'Product7',
             price: 9000,
             discount: 0.2,
-            image: 'https://via.placeholder.com/216/FFFF00/000000',
+            image: 'https://via.placeholder.com/216/216516c5a/FFFFFF',
             isInCart: false,
             description: 'Cтул Lars желтый пластик Ш.48 В.83 Г.56 Вес 5.5кг…',
-            reviews: '23К отзывов'    
+            reviews: '23К отзывов',
+            rate: 5   
             },
 
             {
                 name: 'Product8',
                 price: 8000,
                 discount: 0.3,
-                image: 'https://via.placeholder.com/216/0000FF/808080',
+                image: 'https://via.placeholder.com/216/636c51/FFFFFF',
                 isInCart: false,
                 description: 'Cтул Lars желтый пластик Ш.48 В.83 Г.56 Вес 5.5кг…',
                 reviews: '123К отзывов',
-                
+                rate: 5
             },
 
         {
             name: 'Product9',
             price: 10000,
             discount: 0.3,
-            image: 'https://via.placeholder.com/216/FF0000/FFFFFF',
+            image: 'https://via.placeholder.com/216/9d704d/FFFFFF',
             isInCart: false,
             description: 'Cтул Lars желтый пластик Ш.48 В.83 Г.56 Вес 5.5кг…',
-            reviews: '1К отзывов'
-                     
+            reviews: '1К отзывов',
+            rate: 5
         },
         {
-            name: 'Product3',
+            name: 'Product10',
             price: 9000,
             discount: 0.2,
-            image: 'https://via.placeholder.com/216/FFFF00/000000',
+            image: 'https://via.placeholder.com/216/b06b44/FFFFFF',
             isInCart: false,
             description: 'Cтул Lars желтый пластик Ш.48 В.83 Г.56 Вес 5.5кг…',
-            reviews: '23К отзывов'    
+            reviews: '23К отзывов',
+            rate: 5 
         },
                
     ]
@@ -139,12 +146,12 @@ class Product  { //создание элемента товара
                 productPrice.classList.add('card__price_final');
                 const finalPrice = `${props.price}` - `${props.discount}`* `${props.price}`;
                 Number.isInteger(finalPrice) ? finalPrice :  finalPrice.toFixed(2);
-                productPrice.textContent = finalPrice + ' ₽';
+                productPrice.textContent = finalPrice.toString().replace(/(\d{2,3}(?=(?:\d\d\d)+(?!\d)))/g, '$1 ') + ' ₽';
 
                 const previous = document.createElement('span');
                 previous.classList.add('card__price');
                 previous.classList.add('card__price_previous');
-                previous.textContent = props.price  + ' ₽';
+                previous.textContent = props.price.toString().replace(/(\d{2,3}(?=(?:\d\d\d)+(?!\d)))/g, '$1 ')  + ' ₽';
 
                 discountBlock.append(discountAmount);
                 header.append(discountBlock);
@@ -155,7 +162,7 @@ class Product  { //создание элемента товара
             } 
             else {
             productPrice.classList.add('card__price');
-            productPrice.textContent = props.price + ' ₽';
+            productPrice.textContent = props.price.toString().replace(/(\d{2,3}(?=(?:\d\d\d)+(?!\d)))/g, '$1 ') + ' ₽';
             priceContainer.append(productPrice);
 
             }
@@ -170,8 +177,18 @@ class Product  { //создание элемента товара
             const rating = document.createElement('div');
             rating.classList.add('card__rating');
             
+            for (let i=0; i<props.rate; i++ ) {//звёзды добавляем циклом
             const stars = document.createElement('div');
             stars.classList.add('card__stars');
+            rating.append(stars);
+        }
+            if (props.empty>0) {
+                for (let i=0; i < props.empty; i++) {
+                    const noStar = document.createElement('div');
+                    noStar.classList.add('card__stars_empty');
+                    rating.append(noStar);
+                }
+            }
             
             const review = document.createElement('p');
             review.classList.add('card__review');
@@ -188,7 +205,10 @@ class Product  { //создание элемента товара
             header.append(picture);
             
             productDescription.append(text);
-            rating.append(stars);
+            
+            /*for (let i=0; i<props.rate; i++ ) {
+                rating.append(stars);
+            }*/
             rating.append(review);
             productDescription.append(rating);
             button.append(buttonText);
