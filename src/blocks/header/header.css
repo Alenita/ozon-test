@@ -3,9 +3,13 @@
 @import './__item/header__item.css';
 @import './__item/_current/header__item_current.css';
 @import './__icons/header__icons.css';
+@import './__icon/header__icon.css';
+@import './__cart-count/header__cart-count.css';
+@import './__icon/_cart/header__icon_cart.css';
+@import './__pages/header__pages.css';
 
 .header {
-    width: 100%;
+    max-width: 100%;
     height: 60px;
     display: flex;
     align-items: center;

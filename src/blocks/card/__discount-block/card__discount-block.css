@@ -1,7 +1,7 @@
 .card__discount-block {
     position: absolute;
-    top: 180px;
-    left: -5px;
+    bottom: 10px;
+    left: 0;
     background: #F91155;
     border-radius: 3px;
     padding: 2px 5px;

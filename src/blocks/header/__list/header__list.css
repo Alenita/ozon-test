@@ -1,6 +1,18 @@
 .header__list {
-    width: 33%;
+    width: 40%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .header__list{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .header__list{
+        width: 50%;
+    }
 }

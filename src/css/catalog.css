@@ -5,8 +5,15 @@
 @import '../blocks/item/item.css';
 @import '../blocks/cards/cards.css';
 @import '../blocks/card/card.css';
+@import '../blocks/inside/inside.css';
+@import '../blocks/visible/visible.css';
+@import '../blocks/footer/footer.css';
 
 body {
     margin: 0;
 
+}
+
+.icon {
+    color: currentColor;
 }

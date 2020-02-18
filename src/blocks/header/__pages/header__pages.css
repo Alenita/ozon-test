@@ -1,0 +1,10 @@
+@import './_current/header__pages_current.css';
+.header__pages {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.68px;
+    text-transform: uppercase;
+    color: #808D9A;
+    font-weight: 600;
+}
