@@ -8,3 +8,7 @@
     color: #808D9A;
     font-weight: 600;
 }
+
+.header__pages:hover {
+    color: #004ed6;
+}
