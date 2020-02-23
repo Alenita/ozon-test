@@ -357,7 +357,7 @@ goods.renderProducts(catalog, good)
 function showCart () { // вывод счётчика, если в корзине что-то есть
   const counter = document.querySelector('.header__cart-count')
 
-  if (localStorage.length > 1) {
+  if (localStorage.length > 0) {
     counter.classList.add('visible')
     counter.textContent = localStorage.length;
   } else {
