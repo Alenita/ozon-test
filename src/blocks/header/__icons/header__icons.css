@@ -12,3 +12,10 @@
         width: 10%;
     }
 }
+
+@media screen and (max-width: 650px) {
+    .header__icons{
+        width: 20%;
+    }
+}
+

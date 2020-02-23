@@ -13,6 +13,28 @@
 @import './__text/card__text.css';
 
 .card {
-    grid-column-start: span 3;
+    /*grid-column-start: span 3;*/
+    min-width: 216px;
+    width: 25%;
     cursor: pointer;
+    padding: 0 10px 25px;
+    box-sizing: border-box; 
+}
+
+@media screen and (max-width: 960px) {
+    .card {
+        width: 33.3333%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .card {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
 }

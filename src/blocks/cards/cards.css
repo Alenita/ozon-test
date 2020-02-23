@@ -1,6 +1,6 @@
 @import './__list/cards__list.css';
 
 .cards {
-    width: 90%;
+    width: 100%;
     margin: 44px auto 0;
 }

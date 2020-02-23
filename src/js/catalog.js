@@ -6,6 +6,119 @@ const catalog = [ // данные подружаемых товаров
     price: 8000,
     discount: 0.3,
     image: 'https://via.placeholder.com/216/444888/FFFFFF',
+    imageLarge: 'https://via.placeholder.com/300/444888/FFFFFF',
+    isInCart: false,
+    description: 'Cтул Lars желтый пластик Ш.48 В.83 Г.56 Вес 5.5кг…',
+    reviews: '123К отзывов',
+    rate: 4,
+    empty: 1
+
+  },
+
+  {
+    name: 'Product2',
+    price: 500,
+    discount: false,
+    image: 'https://via.placeholder.com/216.png/91a3a1/FFFFFF',
+    isInCart: false,
+    description: 'Cтул Lars желтый пластик Ш.48 В.83 Г.56 Вес 5.5кг…',
+    reviews: '12К отзывов',
+    rate: 5
+  },
+
+  {
+    name: 'Product3',
+    price: 2456,
+    discount: 0.2,
+    image: 'https://via.placeholder.com/216/a39891/FFFFFF',
+    isInCart: false,
+    description: 'Cтул Lars желтый пластик Ш.48 В.83 Г.56 Вес 5.5кг…',
+    reviews: '23К отзывов',
+    rate: 5
+  },
+
+  {
+    name: 'Product4',
+    price: 10000,
+    discount: 0.3,
+    image: 'https://via.placeholder.com/216/a39193/FFFFFF',
+    isInCart: false,
+    description: 'Cтул Lars желтый пластик Ш.48 В.83 Г.56 Вес 5.5кг…',
+    reviews: '1К отзывов',
+    rate: 3,
+    empty: 2
+  },
+
+  {
+    name: 'Product5',
+    price: 10000,
+    discount: false,
+    image: 'https://via.placeholder.com/216/636c51/FFFFFF',
+    isInCart: false,
+    description: 'Cтул Lars желтый пластик Ш.48 В.83 Г.56 Вес 5.5кг…',
+    reviews: '3К отзывов',
+    rate: 5
+  },
+
+  {
+    name: 'Product6',
+    price: 8000,
+    discount: 0.3,
+    image: 'https://via.placeholder.com/216/516c5a/FFFFFF',
+    isInCart: false,
+    description: 'Cтул Lars желтый пластик Ш.48 В.83 Г.56 Вес 5.5кг…',
+    reviews: '123К отзывов',
+    rate: 5
+  },
+  {
+    name: 'Product7',
+    price: 9000,
+    discount: 0.2,
+    image: 'https://via.placeholder.com/216/216516c5a/FFFFFF',
+    isInCart: false,
+    description: 'Cтул Lars желтый пластик Ш.48 В.83 Г.56 Вес 5.5кг…',
+    reviews: '23К отзывов',
+    rate: 5
+  },
+
+  {
+    name: 'Product8',
+    price: 8000,
+    discount: 0.3,
+    image: 'https://via.placeholder.com/216/636c51/FFFFFF',
+    isInCart: false,
+    description: 'Cтул Lars желтый пластик Ш.48 В.83 Г.56 Вес 5.5кг…',
+    reviews: '123К отзывов',
+    rate: 5
+  },
+
+  {
+    name: 'Product9',
+    price: 10000,
+    discount: 0.3,
+    image: 'https://via.placeholder.com/216/9d704d/FFFFFF',
+    isInCart: false,
+    description: 'Cтул Lars желтый пластик Ш.48 В.83 Г.56 Вес 5.5кг…',
+    reviews: '1К отзывов',
+    rate: 5
+  },
+
+  {
+    name: 'Product10',
+    price: 9000,
+    discount: 0.2,
+    image: 'https://via.placeholder.com/216/b06b44/FFFFFF',
+    isInCart: false,
+    description: 'Cтул Lars желтый пластик Ш.48 В.83 Г.56 Вес 5.5кг…',
+    reviews: '23К отзывов',
+    rate: 5
+  },
+
+  {
+    name: 'Product1',
+    price: 8000,
+    discount: 0.3,
+    image: 'https://via.placeholder.com/216/444888/FFFFFF',
     isInCart: false,
     description: 'Cтул Lars желтый пластик Ш.48 В.83 Г.56 Вес 5.5кг…',
     reviews: '123К отзывов',
@@ -100,6 +213,7 @@ const catalog = [ // данные подружаемых товаров
     reviews: '1К отзывов',
     rate: 5
   },
+
   {
     name: 'Product10',
     price: 9000,
